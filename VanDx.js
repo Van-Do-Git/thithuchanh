@@ -32,7 +32,7 @@ let arr = [1,3,5];
     inxdexofX=[];
 function userindex(){
     for (let i = 0; i < arr1.length; i++) {
-        inxdexofX.push(indexof(arr1[1],arr));
+        inxdexofX.push(indexof(arr1[i],arr));
     }
     return inxdexofX
 }
@@ -60,10 +60,9 @@ function count(arr){
 }
 
 Chuong Trinh
-
-function countstr(arrstr){
-    let arrnew = arrstr.split;
-    count(arrnew);
+function countstr() {
+    let arrstr = prompt("nhap vao chuoi bat ky");
+    count(arrstr);
 }
 
 Cau 4:
@@ -85,7 +84,7 @@ class Animal{
     getWeight(){
         return this.weight;
     }
-    toString(){
+    tostring(){
         return "name :"+this.name+";"+"weight:"+this.weight;
     }
 
@@ -95,7 +94,5 @@ class Animal{
 let animal1= new Animal("Elephant",45.6);
 animal1.toString();
 
-let animal2= new Animal();
-animal2.setName("voi");
-animal2.setWeight(50);
+let animal2= new Animal("voi",50);
 animal2.setName("Mouse");
