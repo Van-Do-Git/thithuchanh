@@ -27,14 +27,15 @@ function indexof(a,arr){
 }
 Chuong Trinh
 
-let arr = [1,3,5];
-    arr1 = [2,5,8];
-    inxdexofX=[];
-function userindex(){
+
+function userindex(a,arr){
+    let check = false;
     for (let i = 0; i < arr1.length; i++) {
-        inxdexofX.push(indexof(arr1[i],arr));
+        if (indexof(a,arr)!=-1){
+            check=true;
+        }
     }
-    return inxdexofX
+    return check;
 }
 
 Cau 3:
